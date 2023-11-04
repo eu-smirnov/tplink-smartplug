@@ -2,6 +2,11 @@
 
 For the full story, see [Reverse Engineering the TP-Link HS110](https://www.softscheck.com/en/reverse-engineering-tp-link-hs110/)
 
+## Run with
+
+systemd-run --user --on-calendar="*-*-* 01:00:00" /home/esm/tplink-smartplug/tplink_smartplug.py -t 192.168.0.124 -c off
+systemd-run --user --on-calendar="*-*-* 16:00:00" /home/esm/tplink-smartplug/tplink_smartplug.py -t 192.168.0.124 -c on
+
 ## tplink_smartplug.py ##
 
 A python client for the proprietary TP-Link Smart Home protocol to control TP-Link HS100 and HS110 WiFi Smart Plugs.
